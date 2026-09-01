@@ -1,3 +1,15 @@
+
+/*
+************************
+Create Stored Procedure
+************************
+
+Objective : 
+The stored procedure  performs the ETL process to load silver schema from the bronze schema.
+Cleaned and transformed data is inserted from bronze into silver tables.
+
+Use to run the stored proc : EXEC silver.load_silver;
+*/
 EXEC silver.load_silver;
 
 CREATE OR ALTER PROCEDURE silver.load_silver AS 
